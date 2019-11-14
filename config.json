@@ -1,0 +1,40 @@
+{
+   "input": {
+       "testSuites": ["Untitled Test Suite.html"],
+       "variables": []
+   },
+
+   "play": {
+       "mode": 2,
+       "entry": "",
+       "noLog": false,
+       "speed": 5,
+       "period": {
+           "time": -1,
+           "maxNum": 1
+       }
+   },
+
+   "report": {
+       "path": "",
+       "snapshot": true
+   },
+
+   "webdriver": {
+       "debug": false,
+       "configs": [
+           {
+               "browsers": [
+					{
+					  "active": true,
+					  "capability": {
+						"browserName": "chrome"
+					  }
+					}
+				  ],
+			  "serverUrl": "http://140.116.6.61:4444",
+			  "type": "selenium"
+           }
+       ]
+   }
+} 
