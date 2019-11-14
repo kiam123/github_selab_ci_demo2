@@ -1,0 +1,12 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10
+
+    steps:
+      - checkout
+
+      - run:
+          name: SideeX Runner Test
+          command: node sideex-runner.js -c config.json
