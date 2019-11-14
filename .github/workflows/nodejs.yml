@@ -1,0 +1,17 @@
+name: SideeX Runner Test
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    - name: SideeX Runner Test
+      run: |
+        node sideex-runner.js -c config.json
